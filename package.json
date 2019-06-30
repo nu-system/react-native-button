@@ -1,7 +1,7 @@
 {
   "name": "@_nu/react-native-button",
   "version": "0.0.1",
-  "description": "react native button system",
+  "description": "这是 NU 「 no-ui 」 组件库系统 nu-system，Button 组件 React-native 实现",
   "main": "lib/index.js",
   "files": [
     "lib"
@@ -16,8 +16,14 @@
     "ios",
     "android"
   ],
-  "dependencies": {},
-  "peerDependencies": {},
+  "devDependencies": {
+    "react": "16.3.1",
+    "react-native": "0.55.4"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.43.0",
+    "prop-types": ">=15.5.7"
+  },
   "homepage": "https://nu-system.github.io/react-native/button/",
   "repository": {
     "type": "git",
