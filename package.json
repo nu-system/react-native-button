@@ -1,0 +1,29 @@
+{
+  "name": "@_nu/react-native-button",
+  "version": "0.0.1",
+  "description": "react native button system",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "author": "yfe-team",
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "button",
+    "react-native",
+    "react-component",
+    "ios",
+    "android"
+  ],
+  "dependencies": {},
+  "peerDependencies": {},
+  "homepage": "https://nu-system.github.io/react-native/button/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nu-system/react-native-button"
+  },
+  "bugs": {
+    "url": "https://github.com/nu-system/react-native-button/issues"
+  }
+}
