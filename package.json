@@ -1,6 +1,6 @@
 {
   "name": "@_nu/react-native-button",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "这是 NU 「 no-ui 」 组件库系统 nu-system，Button 组件 React-native 实现",
   "main": "lib/index.js",
   "files": [
