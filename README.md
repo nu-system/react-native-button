@@ -1,4 +1,4 @@
-# nu-react-native-button
+# [nu-react-native-button](https://github.com/nu-system/react-native-button)
 
 [![npm package][npm-badge]][npm]
 
