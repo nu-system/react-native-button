@@ -99,31 +99,31 @@ export default function App() {
                     <Button theme={theme} variant="ghost" circle>+</Button>
                 </Col>
                 <Col span={2}>
-                    <Button theme={theme} title="Flat" variant="flat">Flat</Button>
+                    <Button theme={theme} variant="link">Link</Button>
                     <View style={{height: 4}}/>
-                    <Button theme={theme} variant="flat" level="primary">primary</Button>
+                    <Button theme={theme} variant="link" level="primary">primary</Button>
                     <View style={{height: 4}}/>
-                    <Button theme={theme} variant="flat" level="secondary">secondary</Button>
+                    <Button theme={theme} variant="link" level="secondary">secondary</Button>
                     <View style={{height: 4}}/>
-                    <Button theme={theme} variant="flat" level="warning">warning</Button>
+                    <Button theme={theme} variant="link" level="warning">warning</Button>
                     <View style={{height: 4}}/>
-                    <Button theme={theme} variant="flat" level="danger">danger</Button>
+                    <Button theme={theme} variant="link" level="danger">danger</Button>
                     <View style={{height: 4}}/>
-                    <Button theme={theme} variant="flat" level="success">success</Button>
+                    <Button theme={theme} variant="link" level="success">success</Button>
                     <View style={{height: 4}}/>
-                    <Button theme={theme} variant="flat" capsule>capsule</Button>
+                    <Button theme={theme} variant="link" capsule>capsule</Button>
                     <View style={{height: 4}}/>
-                    <Button theme={theme} variant="flat" loading>loading</Button>
+                    <Button theme={theme} variant="link" loading>loading</Button>
                     <View style={{height: 4}}/>
-                    <Button theme={theme} variant="flat" disabled>disabled</Button>
+                    <Button theme={theme} variant="link" disabled>disabled</Button>
                     <View style={{height: 4}}/>
-                    <Button theme={theme} variant="flat" size="large">large</Button>
+                    <Button theme={theme} variant="link" size="large">large</Button>
                     <View style={{height: 4}}/>
-                    <Button theme={theme} variant="flat" size="middle">middle</Button>
+                    <Button theme={theme} variant="link" size="middle">middle</Button>
                     <View style={{height: 4}}/>
-                    <Button theme={theme} variant="flat" size="small">small</Button>
+                    <Button theme={theme} variant="link" size="small">small</Button>
                     <View style={{height: 4}}/>
-                    <Button theme={theme} variant="flat">+</Button>
+                    <Button theme={theme} variant="link">+</Button>
                 </Col>
             </Row>
             <View style={{height: 4}}/>

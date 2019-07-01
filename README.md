@@ -1,4 +1,4 @@
-# Button
+# nu-react-native-button
 
 [![npm package][npm-badge]][npm]
 
@@ -7,7 +7,7 @@
 
 这是 NU 「 no-ui 」 组件库系统 nu-system，按钮组件 React native 实现。
 
-[示意图](./assets/demo.png)
+![示意图](./assets/demo.png)
 
 ## 怎么用？
 
@@ -85,7 +85,7 @@ export default Page;
 | capsule |  boolean | - | 圆角按钮|
 | circle |  boolean | - | 正圆按钮 |
 | level | 'default', 'primary', 'secondary', 'warning', 'danger', 'success' | `default` | 按钮等级 |
-| variant | 'fill', 'ghost', 'flat' | `fill` | 按钮变体 |
+| variant | 'fill', 'ghost', 'link' | `fill` | 按钮变体 |
 | size | \['large', 'default', 'middle', 'small' \] or `number` | `default` | 按钮大小 |
 
 *注*: 虽然提供了 `size` 可以为 `number` 的接口，但是这个是非常不推荐使用的。你使用这种方式，意味着你定义的这个按钮样式是没法被人复用的。
@@ -96,7 +96,7 @@ export default Page;
 |:-----|:-----:|:-----:|:-----:|
 | `name` |  `string` | `default` | 主题名称 |
 | `defaultLevel` |  `default`, `primary` | `default` | 默认主色 |
-| `defaultVariant` |  `fill`, `flat`, `ghost` | `fill` | 默认变体 |
+| `defaultVariant` |  `fill`, `link`, `ghost` | `fill` | 默认变体 |
 | `defaultBoolProps` |  `object` | `{}` | 默认 bool 属性, 会给每个按钮默认添加这些 bool 属性 |
 | `levelColors` |  `object` | 见下面 | 按钮主色列表 |
 | `Wrap` |  `func node` | 见下面 | 按钮容器对象 |
