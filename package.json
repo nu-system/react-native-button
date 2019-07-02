@@ -1,6 +1,6 @@
 {
   "name": "@_nu/react-native-button",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "这是 NU 「 no-ui 」 组件库系统 nu-system，Button 组件 React-native 实现",
   "main": "lib/index.js",
   "files": [
@@ -18,8 +18,7 @@
   ],
   "scripts": {
     "build": "cp -r demo/packages/button/lib ./",
-    "prepublishOnly": "npm run build",
-    "publish": "npm publish --access=public"
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "react": "16.3.1",
