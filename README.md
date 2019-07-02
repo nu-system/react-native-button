@@ -99,14 +99,13 @@ export default Page;
 | `defaultProps` |  `Object`| 见下面 | 默认属性 |
 | `levelColors` |  `object` | 见下面 | 按钮主色列表 |
 | `Wrap` |  `func node` | 见下面 | 按钮容器对象 |
+| `WrapAndroid` |  `func node` | 见下面 | 安卓按钮容器对象 |
 | `Content` |  `func node` | 见下面 | 内容器 |
 | `Txt` |  `func node` | 见下面 | 文本容器 |
 | `Loader` |  `func node` | 见下面 | 加载对象 |
-| `wrapProps` |  `object` | 见下面 | 主容器属性 |
 | `wrapStyle` |  `object` | 见下面 | 主容器样式 |
 | `contentStyle` |  `object` | 见下面 | 内容器样式 |
 | `textStyle` |  `object` | 见下面 | 文本容器样式 |
-
 
 ### `defaultProps`
 
@@ -125,7 +124,13 @@ defaultProps: {
 
 ```JSX
 {
-    Wrap: isAndroid ? TouchableNativeFeedback : TouchableOpacity,
+    WrapAndroid: function ({children, level, variant, ...otherProps}) {
+        return <TouchableNativeFeedback
+            background={TouchableNativeFeedback.SelectableBackground()} {...otherProps}>{children}</TouchableNativeFeedback>;
+    },
+    Wrap: function ({children, level, variant, ...otherProps}) {
+        return <TouchableOpacity activeOpacity={0.5} {...otherProps}>{children}</TouchableOpacity>;
+    },
     Txt: Text,
     Content: View,
     Loader: function ({level, variant, wrapStyle, contentStyle, textStyle}) {
