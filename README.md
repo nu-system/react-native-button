@@ -1,9 +1,7 @@
-# [nu-react-native-button](https://github.com/nu-system/react-native-button)
+# nu-react-native-button
 
-[![npm package][npm-badge]][npm]
-
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/@_nu/react-native-button
+[![npm package](https://img.shields.io/npm/v/@_nu/react-native-button.svg)](https://www.npmjs.org/package/@_nu/react-native-button)
+[![github](https://img.shields.io/github/stars/nu-system/react-native-button.svg?style=social)](https://github.com/nu-system/react-native-button)
 
 这是 NU 「 no-ui 」 组件库系统 nu-system，按钮组件 React native 实现。
 
@@ -11,11 +9,11 @@
 
 ## 怎么用？
 
-```
+```bash
 npm i @_nu/react-native-button
 ```
 
-### 二次封装
+## 二次封装
 
 选择 `NuButton` 意味着你选择的是一整套按钮解决方案。
 
@@ -25,7 +23,7 @@ npm i @_nu/react-native-button
 
 ```JSX
 import React from 'react';
-import NuButton, {createNuButtonTheme} from '@y-fe/nu-button-react-native';
+import NuButton, {createNuButtonTheme} from '@_nu/react-native-button';
 
 /**
  * 创建默认按钮主题
@@ -45,6 +43,7 @@ createNuButtonTheme({
  * 创建 test 按钮主题
  */
 createNuButtonTheme({
+    name:'test',
     levelColors: {
         default: '#000000',
         primary: '#1976d2',
@@ -53,12 +52,12 @@ createNuButtonTheme({
         danger: 'red',
         success: 'green',
     }
-}, 'test');
+});
 
 export default NuButton;
 ```
 
-### 使用
+## 使用
 
 ```JSX
 import Button from "./components/Button";
@@ -67,7 +66,7 @@ const Page=()=>{
     return (
      <div>
         <Button ghost large>一个大的幽灵按钮</Button>                
-        <Button ghost large>一个大的幽灵主按钮</Button>
+        <Button theme="test" ghost large>一个大的幽灵主按钮</Button>
      </div>     
     );
 };
@@ -75,7 +74,9 @@ const Page=()=>{
 export default Page;
 ```
 
-## Api NuButton
+## Api
+
+### NuButton
 
 | props   | 类型 | 默认值 | 功能 |
 |:-----|:-----:|:-----:|:-----:|
@@ -90,14 +91,12 @@ export default Page;
 
 *注*: 虽然提供了 `size` 可以为 `number` 的接口，但是这个是非常不推荐使用的。你使用这种方式，意味着你定义的这个按钮样式是没法被人复用的。
 
-## Api createNuButtonTheme 
+### createNuButtonTheme 
 
 | 参数   | 类型 | 默认值 | 功能 |
 |:-----|:-----:|:-----:|:-----:|
 | `name` |  `string` | `default` | 主题名称 |
-| `defaultLevel` |  `default`, `primary` | `default` | 默认主色 |
-| `defaultVariant` |  `fill`, `link`, `ghost` | `fill` | 默认变体 |
-| `defaultBoolProps` |  `object` | `{}` | 默认 bool 属性, 会给每个按钮默认添加这些 bool 属性 |
+| `defaultProps` |  `Object`| 见下面 | 默认属性 |
 | `levelColors` |  `object` | 见下面 | 按钮主色列表 |
 | `Wrap` |  `func node` | 见下面 | 按钮容器对象 |
 | `Content` |  `func node` | 见下面 | 内容器 |
@@ -109,7 +108,18 @@ export default Page;
 | `textStyle` |  `object` | 见下面 | 文本容器样式 |
 
 
-## Api `Wrap, Content, Txt, Loader`
+### `defaultProps`
+
+```JSX
+defaultProps: {
+    level: 'default',
+    variant: 'fill'
+}
+```
+
+这是默认会添加到按钮上的属性值。
+
+### `Wrap, Content, Txt, Loader`
 
 这四个对象拥有相同的API和使用方法，必须返回一个 `node` 对象。
 
@@ -130,9 +140,7 @@ export default Page;
 - contentStyle: 计算之后的内容器样式
 - textStyle:  计算之后的文本样式
 
-
-
-### 组件结构
+#### 组件结构
 
 ```JSX
 <Wrap>
@@ -152,9 +160,9 @@ export default Page;
 </Wrap>
 ```
 
-## Api `wrapStyle` ,`contentStyle`, `textStyle`
+### Api `wrapStyle` ,`contentStyle`, `textStyle`
 
-这四个对象拥有相同的API和使用方法。
+这三个对象拥有相同的API和使用方法。
 
 ```JSX
 {
@@ -203,8 +211,8 @@ export default Page;
         small: {
             fontSize: 12
         },
-        customStyle: function ({level, variant, style}) {
-            if (level === 'warning' && variant === 'fill') {
+        customStyle: function ({warning, fill, style}) {
+            if (warning && fill) {
                 style.color = '#333333';
             }
             return style;
@@ -225,7 +233,7 @@ export default Page;
 除了 `default` 之外的所有 bool 属性，都会在实际渲染的时候和 `default` 样式合并然后经过 `customStyle` 再渲染。
 
 
-### customStyle
+#### customStyle
 
 必须要返回 style 对象。
 
@@ -250,7 +258,7 @@ export default Page;
 <Button h100>高100的按钮</Button>
 ```
 
-## Api `levelColors`
+### `levelColors`
 
 ```JS
 const levelColors= {

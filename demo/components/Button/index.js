@@ -4,8 +4,7 @@ import NuButton, {createNuButtonTheme} from '../../packages/button/lib';
  * 初始化一组按钮
  */
 createNuButtonTheme({
-    defaultProps: 'fill',
-    defaultBoolProps: {
+    defaultProps: {
         capsule: true,
         onPress: () => {
             console.log('123');
@@ -25,8 +24,8 @@ createNuButtonTheme({
       }
     },
     textStyle: {
-        customStyle: function ({level, levelColor, variant, style}) {
-            if (level === 'warning' && variant === 'fill') {
+        customStyle: function ({warning, fill, style}) {
+            if (warning && fill) {
                 style.color = '#333333';
             }
             return style;

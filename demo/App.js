@@ -40,95 +40,69 @@ export default function App() {
             {/*    <Col span={3}><Text style={styles.col}>Hello1</Text></Col>*/}
             {/*    <Col span={3}><Text style={styles.col}>Hello2</Text></Col>*/}
             {/*</Row>*/}
-            <View style={{height: 4}}/>
+
+            <Row style={{
+                marginBottom: 4
+            }}>
+                <Col span={2}>
+                    <Button theme={theme} Pre={<ActivityIndicator animating={true} color={'red'}/>}>fill</Button>
+                </Col>
+                <Col span={2}>
+                    <Button theme={theme} variant="ghost">Ghost</Button>
+                </Col>
+                <Col span={2}>
+                    <Button theme={theme} variant="link">Link</Button>
+                </Col>
+            </Row>
             <Row style={{
                 marginBottom: 40
             }}>
                 <Col span={2}>
-                    <Button theme={theme} Pre={<ActivityIndicator animating={true} color={'red'}/>}>fill</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} level="primary">primary</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} level="secondary">secondary</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} level="warning">warning</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} level="danger">danger</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} level="success">success</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} capsule>capsule</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} loading>default loading</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} disabled>disabled</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} size="large">large</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} size="middle">middle</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} size="small">small</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} circle>+</Button>
+                    <Button style={{marginBottom:4}} theme={theme} level="primary">primary</Button>
+                    <Button style={{marginBottom:4}} theme={theme} level="secondary">secondary</Button>
+                    <Button style={{marginBottom:4}} theme={theme} level="warning">warning</Button>
+                    <Button style={{marginBottom:4}} theme={theme} level="danger">danger</Button>
+                    <Button style={{marginBottom:4}} theme={theme} level="success">success</Button>
+                    <Button style={{marginBottom:4}} theme={theme} capsule>capsule</Button>
+                    <Button style={{marginBottom:4}} theme={theme} loading>default loading</Button>
+                    <Button style={{marginBottom:4}} theme={theme} disabled>disabled</Button>
+                    <Button style={{marginBottom:4}} theme={theme} size="large">large</Button>
+                    <Button style={{marginBottom:4}} theme={theme} size="middle">middle</Button>
+                    <Button style={{marginBottom:4}} theme={theme} size="small">small</Button>
+                    <Button style={{marginBottom:4}} theme={theme} circle>+</Button>
                 </Col>
                 <Col span={2}>
-                    <Button theme={theme} variant="ghost">Ghost</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} variant="ghost" level="primary">primary</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} variant="ghost" level="secondary">secondary</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} variant="ghost" level="warning">warning</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} variant="ghost" level="danger">danger</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} variant="ghost" level="success">success</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} variant="ghost" capsule>capsule</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} variant="ghost" loading>loading</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} variant="ghost" disabled>disabled</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} variant="ghost" size="large">large</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} variant="ghost" size="middle">middle</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} variant="ghost" size="small">small</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} variant="ghost" circle>+</Button>
+
+                    <Button style={{marginBottom:4}} theme={theme} variant="ghost" level="primary">primary</Button>
+                    <Button style={{marginBottom:4}} theme={theme} variant="ghost" level="secondary">secondary</Button>
+                    <Button style={{marginBottom:4}} theme={theme} variant="ghost" level="warning">warning</Button>
+                    <Button style={{marginBottom:4}} theme={theme} variant="ghost" level="danger">danger</Button>
+                    <Button style={{marginBottom:4}} theme={theme} variant="ghost" level="success">success</Button>
+                    <Button style={{marginBottom:4}} theme={theme} variant="ghost" capsule>capsule</Button>
+                    <Button style={{marginBottom:4}} theme={theme} variant="ghost" loading>loading</Button>
+                    <Button style={{marginBottom:4}} theme={theme} variant="ghost" disabled>disabled</Button>
+                    <Button style={{marginBottom:4}} theme={theme} variant="ghost" size="large">large</Button>
+                    <Button style={{marginBottom:4}} theme={theme} variant="ghost" size="middle">middle</Button>
+                    <Button style={{marginBottom:4}} theme={theme} variant="ghost" size="small">small</Button>
+                    <Button style={{marginBottom:4}} theme={theme} variant="ghost" circle>+</Button>
                 </Col>
                 <Col span={2}>
-                    <Button theme={theme} variant="link">Link</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} variant="link" level="primary">primary</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} variant="link" level="secondary">secondary</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} variant="link" level="warning">warning</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} variant="link" level="danger">danger</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} variant="link" level="success">success</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} variant="link" capsule>capsule</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} variant="link" loading>loading</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} variant="link" disabled>disabled</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} variant="link" size="large">large</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} variant="link" size="middle">middle</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} variant="link" size="small">small</Button>
-                    <View style={{height: 4}}/>
-                    <Button theme={theme} variant="link">+</Button>
+                    <Button style={{marginBottom:4}} theme={theme} variant="link" level="primary">primary</Button>
+                    <Button style={{marginBottom:4}} theme={theme} variant="link" level="secondary">secondary</Button>
+                    <Button style={{marginBottom:4}} theme={theme} variant="link" level="warning">warning</Button>
+                    <Button style={{marginBottom:4}} theme={theme} variant="link" level="danger">danger</Button>
+                    <Button style={{marginBottom:4}} theme={theme} variant="link" level="success">success</Button>
+                    <Button style={{marginBottom:4}} theme={theme} variant="link" capsule>capsule</Button>
+                    <Button style={{marginBottom:4}} theme={theme} variant="link" loading>loading</Button>
+                    <Button style={{marginBottom:4}} theme={theme} variant="link" disabled>disabled</Button>
+                    <Button style={{marginBottom:4}} theme={theme} variant="link" size="large">large</Button>
+                    <Button style={{marginBottom:4}} theme={theme} variant="link" size="middle">middle</Button>
+                    <Button style={{marginBottom:4}} theme={theme} variant="link" size="small">small</Button>
+                    <Button style={{marginBottom:4}} theme={theme} variant="link">+</Button>
                 </Col>
             </Row>
-            <View style={{height: 4}}/>
             <Wrap>
-                <Button theme={theme} onPress={() => {
+                <Button style={{marginBottom:4}} theme={theme} onPress={() => {
                     setTheme(theme === 'default' ? 'test' : 'default');
                 }}>{({textStyle})=>{
                     return <Text style={textStyle}>切换主题 「 {theme} 」</Text>;
