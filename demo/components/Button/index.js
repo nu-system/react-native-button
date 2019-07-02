@@ -1,5 +1,8 @@
 import React from 'react';
+import {LinearGradient} from "expo";
+import {View} from 'react-native';
 import NuButton, {createNuButtonTheme} from '../../packages/button/lib';
+
 /**
  * 初始化一组按钮
  */
@@ -17,10 +20,10 @@ createNuButtonTheme({
         danger: '#dc3545',
         success: '#22A745',
     },
-    wrapStyle:{
-      h100p:{
-          height:100
-      }
+    wrapStyle: {
+        h100p: {
+            height: 100
+        }
     },
     textStyle: {
         customStyle: function ({warning, fill, style}) {
@@ -36,7 +39,7 @@ createNuButtonTheme({
  * 创建按钮主题
  */
 createNuButtonTheme({
-    name:'test',
+    name: 'test',
     defaultProps: {
         capsule: true,
         onPress: () => {
@@ -50,7 +53,21 @@ createNuButtonTheme({
         warning: '#ff9900',
         danger: 'red',
         success: 'green',
-    }
+    },
+    Content: function ({children, style, level, variant}) {
+        if (level === 'danger' && variant === 'fill') {
+            return (
+                <LinearGradient
+                    colors={["red", "blue"]}
+                    style={style}
+                >{children}</LinearGradient>
+            );
+        } else {
+            return (
+                <View style={style}>{children}</View>
+            );
+        }
+    },
 });
 
 export default NuButton;

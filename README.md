@@ -276,3 +276,43 @@ const levelColors= {
 };
 ```
 
+
+## FAQ
+
+### 多行文本
+
+```JSX
+<Button>{({textStyle}) => {
+    return (
+        <View>
+            <Text style={textStyle}>切换主题</Text>
+            <Text style={textStyle}>「default</Text>
+        </View>
+    );
+}}</Button>
+```
+
+
+### 渐变背景
+
+```JSX
+{    
+    name:'test',
+    Content: function ({children, style, level, variant}) {
+        /* 修改 fill danger 按钮为渐变背景  */
+        if (level === 'danger' && variant === 'fill') {
+            return (
+                <LinearGradient
+                    colors={["red", "blue"]}
+                    style={style}
+                >{children}</LinearGradient>
+            );
+        } else {
+            return (
+                <View style={style}>{children}</View>
+            );
+        }
+    },
+}
+```
+
