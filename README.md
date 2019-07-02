@@ -276,8 +276,14 @@ const levelColors= {
 };
 ```
 
-
 ## FAQ
+
+### 添加图标
+
+```JSX
+<Button Pre={<ActivityIndicator animating={true} color={'red'}/>}>图标在我左边</Button>
+<Button Append={<ActivityIndicator animating={true} color={'red'}/>}>图标在我右边</Button>
+```
 
 ### 多行文本
 
