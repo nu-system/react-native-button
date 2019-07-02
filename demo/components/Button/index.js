@@ -5,7 +5,6 @@ import NuButton, {createNuButtonTheme} from '../../packages/button/lib';
  */
 createNuButtonTheme({
     defaultProps: {
-        capsule: true,
         onPress: () => {
             console.log('123');
         }
@@ -38,6 +37,12 @@ createNuButtonTheme({
  */
 createNuButtonTheme({
     name:'test',
+    defaultProps: {
+        capsule: true,
+        onPress: () => {
+            console.log('123');
+        }
+    },
     levelColors: {
         default: '#000000',
         primary: '#1976d2',
