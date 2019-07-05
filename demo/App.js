@@ -77,7 +77,7 @@ export default function App() {
                     <Button style={{marginBottom: 4}} theme={theme} variant="ghost" level="warning">warning</Button>
                     <Button style={{marginBottom: 4}} theme={theme} variant="ghost" level="danger">danger</Button>
                     <Button style={{marginBottom: 4}} theme={theme} variant="ghost" level="success">success</Button>
-                    <Button style={{marginBottom: 4}} theme={theme} variant="ghost" capsule>capsule</Button>
+                    <Button style={{marginBottom: 4}} theme={theme} variant="ghost" capsule>capsule2</Button>
                     <Button style={{marginBottom: 4}} theme={theme} variant="ghost" loading>loading</Button>
                     <Button style={{marginBottom: 4}} theme={theme} variant="ghost" disabled>disabled</Button>
                     <Button style={{marginBottom: 4}} theme={theme} variant="ghost" size="large">large</Button>

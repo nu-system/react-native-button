@@ -9,7 +9,7 @@ import NuButton, {createNuButtonTheme} from '../../packages/button/lib';
 createNuButtonTheme({
     defaultProps: {
         onPress: () => {
-            console.log('123');
+            console.log('you click the button');
         }
     },
     levelColors: {
@@ -43,7 +43,7 @@ createNuButtonTheme({
     defaultProps: {
         capsule: true,
         onPress: () => {
-            console.log('123');
+            console.log('you click the button');
         }
     },
     levelColors: {
