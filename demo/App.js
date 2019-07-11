@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
     }
 });
 
+
 export default function App() {
     const [theme, setTheme] = useState('default');
     return (
