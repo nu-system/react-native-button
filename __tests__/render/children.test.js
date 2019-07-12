@@ -17,8 +17,8 @@ describe("children属性",()=>{
     })
     it(`文字+变量`,()=>{
         const red="red";
-        const tmp= shallow(<NuButton>default {red}</NuButton>).find("Text")
+        const tmp= shallow(<NuButton>default {red} {red}</NuButton>).find("Text")
         const {theme , style, Pre, Append, ...userProps}=tmp.props()
-        expect(tmp.prop("children")).toBe("default red")
+        expect(tmp.prop("children").length).toBe(3)
     })
 })
