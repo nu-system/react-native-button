@@ -19,7 +19,7 @@
   "scripts": {
     "build": "cp -r demo/packages/button/lib ./",
     "prepublishOnly": "npm run build",
-    "test": "jest"
+    "test": "jest --verbose"
   },
   "devDependencies": {
     "react": "16.3.1",
