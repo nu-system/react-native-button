@@ -65,13 +65,11 @@ import Button from "./components/Button";
 const Page=()=>{    
     return (
      <div>
-        <Button ghost large>一个大的幽灵按钮</Button>                
-        <Button theme="test" ghost large>一个大的幽灵主按钮</Button>
+        <Button variant="ghost" size="large">一个大的幽灵按钮</Button>                
+        <Button theme="test" variant="ghost" size="large">一个大的幽灵主按钮</Button>
      </div>     
     );
 };
-
-export default Page;
 ```
 
 ## Api
