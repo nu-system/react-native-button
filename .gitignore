@@ -14,5 +14,3 @@ node_modules/
 .DS_Store
 
 coverage
-
-__tests__/report.txt
