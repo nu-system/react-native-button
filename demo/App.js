@@ -45,7 +45,7 @@ export default function App() {
                 marginBottom: 4
             }}>
                 <Col span={2}>
-                    <Button theme={theme} Pre={<ActivityIndicator animating={true} color={'red'}/>}>fill</Button>
+                    <Button theme={theme} before={<ActivityIndicator animating={true} color={'red'}/>}>fill</Button>
                 </Col>
                 <Col span={2}>
                     <Button theme={theme} variant="ghost">Ghost</Button>
@@ -113,6 +113,25 @@ export default function App() {
                     );
                 }}</Button>
             </Wrap>
+            <View  style={{
+                alignItems: 'flex-start'
+            }}>
+                <View style={{
+                    backgroundColor: 'red',
+                    height:50
+                }}>
+                    <Text style={{
+                        paddingLeft:10,
+                        paddingRight:10
+                    }}>asdf</Text>
+                </View>
+            </View>
+            <View  style={{
+                alignItems: 'flex-start'
+            }}>
+                <Button>123</Button>
+            </View>
+
         </View>
     )
 };

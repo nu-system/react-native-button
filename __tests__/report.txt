@@ -1,52 +1,10 @@
-passed 枚举level属性，判断结果是否正确 level default  level default
-passed 枚举level属性，判断结果是否正确 level primary  level primary
-passed 枚举level属性，判断结果是否正确 level secondary  level secondary
-passed 枚举level属性，判断结果是否正确 level warning  level warning
-passed 枚举level属性，判断结果是否正确 level danger  level danger
-passed 枚举level属性，判断结果是否正确 level success  level success
-passed 自定义level是不可以的 custom level is not allowed  custom level is not allowed
-passed children属性 纯文字  纯文字
-passed children属性 文字+空格+文字  文字+空格+文字
-passed children属性 文字+变量  文字+变量
-passed 回调函数 Text渲染正确  Text渲染正确
-passed 回调函数 回调textStyle作用到Text上  回调textStyle作用到Text上
-passed 回调函数 自定义style  自定义style
-passed android 容器测试 android render correctly  android render correctly
-passed android 容器测试 android touchopacity  android touchopacity
-passed ios 容器测试 ios render correctly  ios render correctly
-passed ios 容器测试 ios touchopacity  ios touchopacity
-passed 测试二次封装默认值 默认level  默认level
-passed 测试二次封装默认值 默认形态  默认形态
-passed 测试二次封装 textStyle 自定义 class  textStyle 自定义 class
-passed 测试二次封装 textStyle customStyle自定义  textStyle customStyle自定义
-passed 测试二次封装 wrapStyle 自定义 class  wrapStyle 自定义 class
-passed 测试二次封装 wrapStyle customStyle自定义  wrapStyle customStyle自定义
-passed 测试二次封装 contentStyle 自定义 class  contentStyle 自定义 class
-passed 测试二次封装 contentStyle customStyle自定义  contentStyle customStyle自定义
-passed loading loading 二次封装  loading 二次封装
-passed Wrap Wrap 二次封装  Wrap 二次封装
-passed Content Content 二次封装  Content 二次封装
-passed Txt Txt 二次封装  Txt 二次封装
-passed 默认loading 存在ActivityIndicator  存在ActivityIndicator
-passed 枚举size属性，判断结果是否正确 default 状态  default 状态
-passed 枚举size属性，判断结果是否正确 large 状态  large 状态
-passed 枚举size属性，判断结果是否正确 middle 状态  middle 状态
-passed 枚举size属性，判断结果是否正确 small 状态  small 状态
-passed 自定义size是可以的，必须是数字 custom size is number  custom size is number
-passed 自定义size是可以的，必须是数字 custom size is not number  custom size is not number
-passed capsule有效 borderRadius100  borderRadius100
-passed circle有效 borderRadius100，宽=高  borderRadius100，宽=高
-passed disabled有效 透明度为0.4  透明度为0.4
-passed 自定义style style有效  style有效
-passed 测试二次封装 textStyle 自定义 class  textStyle 自定义 class
-passed 测试二次封装 textStyle 自定义 class  textStyle 自定义 class
-passed 测试二次封装 textStyle 自定义 class  textStyle 自定义 class
-passed 枚举variant属性，判断结果是否正确 default 状态，相当于fill  default 状态，相当于fill
-passed 枚举variant属性，判断结果是否正确 fill 状态，背景色等于当前level色  fill 状态，背景色等于当前level色
-passed 枚举variant属性，判断结果是否正确 ghost border和字体颜色以及loading颜色等于当前level色  ghost border和字体颜色以及loading颜色等于当前level色
-passed 枚举variant属性，判断结果是否正确 link 字体颜色以及loading颜色等于当前level色  link 字体颜色以及loading颜色等于当前level色
-passed 自定义variant是不可以的 custom variant is not allowed  custom variant is not allowed
-passed 头部加icon icon render correctly  icon render correctly
-passed 头部加icon function render correctly  function render correctly
-passed 尾部部加icon icon render correctly  icon render correctly
-passed 尾部部加icon function render correctly  function render correctly
+
+
+
+
+
+
+
+
+
+
