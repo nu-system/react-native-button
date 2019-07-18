@@ -49,5 +49,8 @@
   },
   "bugs": {
     "url": "https://github.com/nu-system/react-native-button/issues"
+  },
+  "dependencies": {
+    "lodash.merge": "^4.6.2"
   }
 }
