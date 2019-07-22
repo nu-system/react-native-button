@@ -19,7 +19,7 @@
   "scripts": {
     "build": "cp -r demo/packages/button/lib ./",
     "prepublishOnly": "npm run build",
-    "log": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "test": "jest --verbose"
   },
   "devDependencies": {
@@ -28,7 +28,6 @@
     "@babel/preset-env": "^7.5.4",
     "babel-jest": "^24.8.0",
     "commitizen": "^4.0.3",
-    "conventional-changelog-cli": "^2.0.21",
     "cz-conventional-changelog": "^3.0.2",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
