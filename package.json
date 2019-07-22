@@ -53,5 +53,10 @@
   },
   "bugs": {
     "url": "https://github.com/nu-system/react-native-button/issues"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
