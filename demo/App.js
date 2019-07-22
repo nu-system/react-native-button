@@ -5,7 +5,6 @@ import {
 import { Row, Col, Wrap } from './components/Grid/index.js';
 import Button from './components/Button/index.js';
 
-
 export default function App() {
   const [theme, setTheme] = useState('default');
   return (
