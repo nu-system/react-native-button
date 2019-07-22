@@ -19,9 +19,9 @@
   "scripts": {
     "build": "cp -r demo/packages/button/lib ./",
     "prepublishOnly": "npm run build",
-    "log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "test": "jest --verbose",
-    "init": "commitizen init cz-conventional-changelog --yarn --dev --exact"
+    "log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "commitizenInit": "commitizen init cz-conventional-changelog --yarn --dev --exact"
   },
   "devDependencies": {
     "@babel/core": "^7.5.4",
