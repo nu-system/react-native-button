@@ -26,7 +26,12 @@ createNuButtonTheme({
     },
   },
   textStyle: {
-    customStyle({ warning, fill, style }) {
+    customStyle({
+      warning, fill, style, secondary, before
+    }) {
+      if (before && secondary) {
+        style.color = '#ff0000';
+      }
       if (warning && fill) {
         style.color = '#333333';
       }
