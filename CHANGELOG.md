@@ -1,9 +1,10 @@
+## [0.1.6](https://github.com/nu-system/react-native-button/compare/v0.1.5...v0.1.6) (2019-08-22)
+
+
+
 ## [0.1.5](https://github.com/nu-system/react-native-button/compare/v0.1.4...v0.1.5) (2019-07-22)
 
-### Features
 
-* 移除 loadash.merge
-* 添加 changelog 和 commitizen
 
 ## [0.1.4](https://github.com/nu-system/react-native-button/compare/v0.1.3...v0.1.4) (2019-07-18)
 

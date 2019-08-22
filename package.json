@@ -29,6 +29,7 @@
     "@babel/preset-env": "^7.5.4",
     "babel-jest": "^24.8.0",
     "commitizen": "^4.0.3",
+    "conventional-changelog-cli": "^2.0.23",
     "cz-conventional-changelog": "^3.0.2",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
