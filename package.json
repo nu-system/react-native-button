@@ -38,7 +38,7 @@
     "metro-react-native-babel-preset": "^0.55.0",
     "react": "16.3.1",
     "react-dom": "^16.8.6",
-    "react-native": "^0.60.0",
+    "react-native": "^0.62.3",
     "react-native-mock-render": "^0.1.5",
     "react-test-renderer": "^16.8.6",
     "sinon": "^7.3.2"
